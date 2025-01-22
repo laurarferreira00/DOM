@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Exemplo de Manipulação DOM</title>
+    
+</head>
+<body>
+
+    <fieldset> <!--  Criar caixa  -->
+        <h3>Defina o melhor estilo de página para você:</h3>
+
+        <button id="m_noite" onclick="f_noite()">Modo Noturno 🌑</button>
+
+        <button id="m_dia" onclick="f_dia()">Modo Dia 🌞</button>
+
+        <span>|</span>
+
+
+                <label>Escolha o tamanho da fonte:</label>
+                <button id="pequeno" onclick="f_pequeno()">-</button>   
+                <button id="medio" onclick="f_medio()">normal</button> 
+                <button id="grande" onclick="f_grande()">+</button> 
+
+    </fieldset>
+    <hr>
+
+    <h1>Pesquisa</h1>
+    <hr>
+
+    <p>1-Qual a sua faixa etária?</p>
+        
+    <button id="bebe">0 a 5 anos</button> <!-- Não usei onclick -->
+    <button id="crianca" onclick="f_crianca()">6 a 12 anos</button>
+    <button id="adolescente" onclick="f_adolescente()">13 a 17 anos</button>
+    <button id="jovem" onclick="f_jovem()">18 a 24 anos</button>
+    <button id="adulto" onclick="f_adulto()">25 a 35 anos</button>
+    <button id="maduro" onclick="f_maduro()">36 a 59 anos</button>
+    <button id="vivido" onclick="f_vivido()">acima de 60</button>
+
+
+    <!-- A propiedade onclick já nos permite realizar uma ação, como direcionar uma função direto no elemento-->
+    <br><br>
+    <div id="idade"></div>
+    <hr>
+
+    <p>2-Você é :</p> 
+    <input type="radio" id="homem" name="sexo" value="Masculino">
+    <label for="homem">Homem</label><!--For se clicar no nome tambem seleciona-->
+    
+    <input type="radio" id="mulher" name="sexo" value="Feminino">
+    <label for="mulher">Mulher</label>
+    
+    <input type="radio" id="outro" name="sexo" value="Outro">
+    <label for="outro">Outro</label>
+
+
+    <br><br>
+    <button id="btnResposta2">Confirmar resposta 2</button>
+
+
+<hr>
+    <div id="div_sexo"></div>
+<hr>
+
+<p>O presente que você irá ganhar será:</p>
+
+
+<hr>
+    <button id="presente" onclick="f_presente()">Resgatar Presente</button>
+<hr>
+
+
+    <script src="logica.js"></script>
+</body>
+</html>
